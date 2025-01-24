@@ -1,0 +1,26 @@
+
+#frase2{
+    margin-bottom: 30px !important;
+}
+
+#frase h5 {
+    font-family: 'Roboto', sans-serif; /* Fonte moderna e limpa */
+    font-weight: bold; /* Deixa a fonte mais grossa */
+    font-size: 1.2rem; /* Tamanho grande para o título */
+    line-height: 1.5; /* Espaço entre as linhas */
+    color: white; /* Cor vibrante (tom de laranja/avermelhado) */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+    margin-top: 30px; /* Ajuste o espaçamento superior */
+    padding: 20px 30px; /* Adiciona padding interno para dar respiro ao texto */
+    background: linear-gradient(45deg, #37c87f, #0faf8f); /* Gradiente de fundo no título */
+    border-radius: 10px; /* Bordas arredondadas */
+    max-width: auto; /* Limita a largura do título */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+    transition: color 0.3s, transform 0.3s; /* Transição suave de cor e efeito */
+}
+
+#frase h5:hover {
+    color: #fff; /* Cor do texto muda ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do texto levemente ao passar o mouse */
+}
