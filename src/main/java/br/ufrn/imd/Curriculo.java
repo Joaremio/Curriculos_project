@@ -3,12 +3,14 @@ package br.ufrn.imd;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.*;
+import org.eclipse.angus.mail.imap.protocol.UID;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 @Entity
-@Table(name = "curriculos")  // Especificando explicitamente o nome da tabela
+@Table(name = "curriculos")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -23,21 +25,21 @@ public class Curriculo {
     private String nome;
 
     @NotBlank(message = "O e-mail é obrigatório.")
-    @Email(message = "E-mail inválido.")
+    @Email(message = "Formato de e-mail inválido.")
     private String email;
 
     @NotBlank(message = "O telefone é obrigatório.")
     private String telefone;
 
-    @NotEmpty(message = "O cargo desejado é obrigatório.")
+    @NotBlank(message = "O cargo desejado é obrigatório.")
     private String cargo;
 
     @NotBlank(message = "A escolaridade é obrigatória.")
     private String escolaridade;
 
-    private String observacoes; // Opcional
+    private String observacoes;
 
-    private String arquivo; // O campo para armazenar o nome do arquivo
+    private String arquivo;
 
     private String ip;
 
