@@ -14,24 +14,39 @@ Este projeto permite que candidatos a vagas de emprego enviem seus currículos a
 
 **Log de Atividades:** O sistema mantém um log detalhado das atividades para monitoramento e rastreamento de erros e eventos importantes.
 
+
+## Arquitetura
+
+- Frontend: A interface do usuário é construída usando HTML, CSS, JS e Thymeleaf (para a renderização dinâmica das páginas no servidor). O formulário é responsivo e permite que o usuário faça o upload de seu currículo diretamente na plataforma.
+
+- Backend: O backend é desenvolvido utilizando o Spring Boot, com a utilização de Spring MVC para a gestão das requisições HTTP, Spring Data JPA para a persistência de dados no banco de dados, e Spring Mail para o envio de e-mails. O arquivo enviado é validado em termos de formato e tamanho, antes de ser salvo no servidor.
+
+- Banco de Dados: O banco de dados utilizado é MySQL, onde são armazenados os dados dos currículos recebidos, incluindo informações pessoais do candidato e os metadados do arquivo enviado.
+
+
+## Tecnologias Utilizadas
+- Spring Boot - Framework para construção da aplicação backend.
+- Spring MVC - Para gerenciamento das requisições HTTP e visualizações.
+- Spring Data JPA - Para acesso ao banco de dados.
+- Spring Mail - Para o envio de e-mails.
+- Thymeleaf - Para a renderização das páginas HTML no servidor.
+- MySQL - Banco de dados para armazenamento dos currículos.
+- JavaMailSender - Para enviar e-mails com o currículo anexado.
+
 ## Estrutura do Projeto
 
-### 1. Validação de Dados
-
-O sistema utiliza Bean Validation para garantir que os dados fornecidos no formulário de envio de currículos estejam corretos, como a verificação de e-mail, telefone e outros campos obrigatórios.
-
-### 2. Armazenamento de Arquivos
+### 1. Armazenamento de Arquivos
 
 Os arquivos enviados pelos candidatos são armazenados em uma pasta local chamada uploads. Isso permite que os arquivos sejam facilmente acessados e organizados no servidor.
 
 - Os arquivos são salvos na pasta uploads dentro do diretório raiz do projeto.
 - Apenas arquivos com formato permitido (ex.: .pdf, .docx) e tamanho inferior a 1MB são aceitos.
 
-### 3. Envio de E-mail
+### 2. Envio de E-mail
 
 Após o envio do currículo, um e-mail de confirmação é enviado para o candidato, informando que o currículo foi recebido com sucesso. O e-mail contém um resumo dos dados enviados e um anexo com o arquivo do currículo.
 
-### 4. Logs no Projeto
+### 3. Logs no Projeto
 
 O sistema utiliza SLF4J com Logger para manter logs de todas as atividades importantes e erros que possam ocorrer durante o processo de envio do currículo. Isso inclui:
 
@@ -53,7 +68,7 @@ A configuração de logs ajuda a rastrear o comportamento do sistema e identific
 Clone este repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/curriculo-online.git
+git clone https://github.com/Joaremio/Curriculos_project.git
 cd curriculo-online
 ```
 
