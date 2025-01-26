@@ -1,5 +1,5 @@
-package br.ufrn.imd;
-
+package br.ufrn.imd.service;
+import br.ufrn.imd.utils.ArquivoUtils;
 import br.ufrn.imd.model.Curriculo;
 import br.ufrn.imd.repository.CurriculoRepository;
 import jakarta.servlet.http.HttpServletRequest;
@@ -10,7 +10,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 import org.springframework.web.multipart.MultipartFile;
-
 import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;

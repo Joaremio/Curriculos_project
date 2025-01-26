@@ -1,4 +1,4 @@
-package br.ufrn.imd;
+package br.ufrn.imd.repository;
 
 import br.ufrn.imd.model.Curriculo;
 import org.springframework.data.jpa.repository.JpaRepository;

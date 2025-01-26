@@ -1,13 +1,10 @@
-package br.ufrn.imd;
+package br.ufrn.imd.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.*;
-import org.eclipse.angus.mail.imap.protocol.UID;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 @Entity
 @Table(name = "curriculos")

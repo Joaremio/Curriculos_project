@@ -1,4 +1,4 @@
-package br.ufrn.imd;
+package br.ufrn.imd.utils;
 
 import org.springframework.web.multipart.MultipartFile;
 
