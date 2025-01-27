@@ -72,11 +72,29 @@ git clone https://github.com/Joaremio/Curriculos_project.git
 cd curriculo-online
 ```
 
-Execute o aplicativo:
+**Configuração do Banco de Dados MySQL**
+
+Para rodar o projeto localmente, é necessário configurar o banco de dados MySQL e conectá-lo ao projeto.
+
+- Instale o MySQL e o MySQL Workbench (caso ainda não tenha instalado):
+
+- Configure o Usuário e Senha do MySQL:
+
+- Certifique-se de que você tem um usuário com permissões adequadas no MySQL. O usuário padrão geralmente é root com a senha configurada durante a instalação do MySQL.
+  
+- Dentro do projeto localize o arquivo src/main/resources/application.properties.
+- 
+- Substitua os valores padrão pelas configurações do seu ambiente MySQL. Exemplo:
+  ```
+  spring.datasource.url=jdbc:mysql://localhost:3306/curriculo_online
+  spring.datasource.username=seu_usuario
+  spring.datasource.password=sua_senha
+
+- Execute o aplicativo:
 
 ```bash
 ./mvnw spring-boot:run
 ```
 
-Acesse o formulário de envio de currículos em http://localhost:8080/formulario.
+Acesse o formulário de envio de currículos em http://localhost:8080
 
