@@ -83,10 +83,10 @@ Para rodar o projeto localmente, é necessário configurar o banco de dados MySQ
 - Certifique-se de que você tem um usuário com permissões adequadas no MySQL. O usuário padrão geralmente é root com a senha configurada durante a instalação do MySQL.
   
 - Dentro do projeto localize o arquivo src/main/resources/application.properties.
-- 
+  
 - Substitua os valores padrão pelas configurações do seu ambiente MySQL. Exemplo:
   ```
-  spring.datasource.url=jdbc:mysql://localhost:3306/curriculo_online
+  spring.datasource.url=jdbc:mysql://localhost:3306/curriculos
   spring.datasource.username=seu_usuario
   spring.datasource.password=sua_senha
 
