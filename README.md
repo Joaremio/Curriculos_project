@@ -98,3 +98,20 @@ Para rodar o projeto localmente, é necessário configurar o banco de dados MySQ
 
 Acesse o formulário de envio de currículos em http://localhost:8080
 
+
+## ⚠️ Alerta: Bloqueio de envio de e-mails por Antivírus ou Firewall
+
+Ao clonar este projeto e testar o envio de e-mails, é possível que o antivírus ou firewall instalado no seu computador bloqueie a conexão com o servidor SMTP do Gmail (`smtp.gmail.com`) na porta 587. Isso pode impedir que o sistema envie e-mails corretamente.
+
+### **Como Resolver:**
+1. **Verifique se o antivírus está ativo:**
+   - Alguns antivírus possuem configurações que bloqueiam conexões SMTP por padrão.
+   - Consulte as configurações do seu antivírus e permita a aplicação ou a porta 587.
+
+2. **Desative temporariamente o antivírus para testes:**
+   - Apenas para testes locais, você pode desativar temporariamente o antivírus e verificar se o envio de e-mails funciona.
+
+### **Importante:**
+Este problema é específico de algumas configurações de segurança locais. Certifique-se de ajustar essas configurações apenas quando necessário e, se possível, reverta as alterações após os testes.
+
+
