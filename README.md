@@ -17,21 +17,37 @@ Este projeto permite que candidatos a vagas de emprego enviem seus currículos a
 
 ## Arquitetura
 
-- Frontend: A interface do usuário é construída usando HTML, CSS, JS e Thymeleaf (para a renderização dinâmica das páginas no servidor). O formulário é responsivo e permite que o usuário faça o upload de seu currículo diretamente na plataforma.
+- Frontend: A interface do usuário é construída usando HTML, CSS, JS, Thymeleaf e Bootstrap (para a renderização dinâmica das páginas no servidor). O formulário é responsivo e permite que o usuário faça o upload de seu currículo diretamente na plataforma.
 
 - Backend: O backend é desenvolvido utilizando o Spring Boot, com a utilização de Spring MVC para a gestão das requisições HTTP, Spring Data JPA para a persistência de dados no banco de dados, e Spring Mail para o envio de e-mails. O arquivo enviado é validado em termos de formato e tamanho, antes de ser salvo no servidor.
 
 - Banco de Dados: O banco de dados utilizado é MySQL, onde são armazenados os dados dos currículos recebidos, incluindo informações pessoais do candidato e os metadados do arquivo enviado.
 
 
-## Tecnologias Utilizadas
-- Spring Boot - Framework para construção da aplicação backend.
-- Spring MVC - Para gerenciamento das requisições HTTP e visualizações.
-- Spring Data JPA - Para acesso ao banco de dados.
-- Spring Mail - Para o envio de e-mails.
-- Thymeleaf - Para a renderização das páginas HTML no servidor.
-- MySQL - Banco de dados para armazenamento dos currículos.
-- JavaMailSender - Para enviar e-mails com o currículo anexado.
+## Backend: Tecnologias Utilizadas
+
+- **Spring Boot** - Framework para construção da aplicação backend.
+- **Spring MVC** - Para gerenciamento das requisições HTTP e visualizações.
+- **Spring Data JPA** - Para acesso ao banco de dados.
+- **Spring Mail** - Para o envio de e-mails.
+- **MySQL** - Banco de dados para armazenamento dos currículos.
+- **JavaMailSender** - Para enviar e-mails com o currículo anexado.
+
+## Frontend: Interface do Usuário
+
+A interface do usuário é construída utilizando as seguintes tecnologias:
+
+- **HTML**: Estruturação da página e conteúdo.
+- **CSS**: Estilização da página para torná-la visualmente agradável.
+- **JavaScript**: Funcionalidade dinâmica e interatividade.
+- **Thymeleaf**: Utilizado para a renderização dinâmica das páginas no servidor, permitindo integração de dados no frontend.
+- **Bootstrap**: Framework CSS utilizado para tornar o design da interface responsivo e agradável, garantindo que a aplicação seja bem adaptada a diferentes tamanhos de tela.
+
+O formulário de envio de currículo foi projetado para ser **responsivo**, permitindo que o usuário faça o upload de seu currículo diretamente na plataforma, com uma interface que se adapta automaticamente.
+
+### Funcionalidades:
+- O formulário possui campos para o usuário inserir seu **nome**, **e-mail** e **currículo** (arquivo).
+- Utiliza o **Bootstrap** para garantir que o design seja limpo, responsivo e fácil de usar.
 
 ## Estrutura do Projeto
 
