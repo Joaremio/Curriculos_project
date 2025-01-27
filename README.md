@@ -68,8 +68,8 @@ A configuração de logs ajuda a rastrear o comportamento do sistema e identific
 Clone este repositório:
 
 ```bash
-git clone https://github.com/Joaremio/Curriculos_project.git
-cd curriculo-online
+git clone https://github.com/Joaremio/curriculo_project.git
+cd curriculo_project
 ```
 
 **Configuração do Banco de Dados MySQL**
