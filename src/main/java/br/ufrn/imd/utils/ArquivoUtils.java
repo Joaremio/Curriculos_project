@@ -5,7 +5,7 @@ import org.springframework.web.multipart.MultipartFile;
 public class ArquivoUtils {
 
     public static boolean validarTamanho(MultipartFile file) {
-        return file.getSize() <= 1024 * 1024; // Retorna true se o tamanho for válido
+        return file.getSize() <= 1024 * 1024;
     }
 
     public static boolean validarFormato(MultipartFile file) {

@@ -1,5 +1,4 @@
 package br.ufrn.imd.controller;
-
 import br.ufrn.imd.model.Curriculo;
 import br.ufrn.imd.service.CurriculoService;
 import jakarta.servlet.http.HttpServletRequest;
